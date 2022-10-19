@@ -5,4 +5,5 @@ Rails.application.routes.draw do
    root "pages#home"
    get "about", to:"pages#about"
    get "salve", to:"pages#salve_regina"
+   resources :articles, only:[:show]
 end
