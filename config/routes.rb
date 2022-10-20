@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'pages#home'
   get 'about', to: 'pages#about'
+  get 'articles', to: 'articles#index'
   get 'salve', to: 'pages#salve_regina'
-  resources :articles, only: [:show, :index, :new, :create, :edit, :update]
+  resources :articles
 end
