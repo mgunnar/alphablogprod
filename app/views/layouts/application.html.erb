@@ -11,11 +11,8 @@
   </head>
 
   <body>
-  <% flash.each do |name, msg| %>
-  <%=msg%>
-  <%end%>
+    <%=render 'layouts/messages'%>
     <%= yield %>
-    <%= link_to "Back", :back %>
-    <%= link_to "Home", root_path %>
+
   </body>
 </html>
